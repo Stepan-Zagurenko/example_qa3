@@ -19,13 +19,11 @@ public class FirstTest {
         void FirstTest1() {
 
             open("https://demoqa.com/text-box");
-            $("#userName").shouldBe(visible);
-
-            $("[#userName]").setValue("Alesha");
-            $("[#userEmail]").setValue("Popov");
-            $("[#currentAddress]").setValue("Yaroslavskiy 95");
-            $("[#permanentAddress]").setValue("Yaroslavskiy 9000");
-            $("submit").click();
+            $("#userName").setValue("Alesha");
+            $("#userEmail").setValue("Popov");
+            $("#currentAddress").setValue("Yaroslavskiy 95");
+            $("#permanentAddress").setValue("Yaroslavskiy 9000");
+            $("#submit").click();
 
         }
     }
