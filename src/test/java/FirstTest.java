@@ -13,14 +13,15 @@ public class FirstTest {
         Configuration.browserSize = "1920x1080";
         Configuration.timeout = 15000;
         Configuration.pageLoadTimeout = 60000;
+        Configuration.baseUrl = "https://demoqa.com";
     }
 
         @Test
         void FirstTest1() {
 
-            open("https://demoqa.com/text-box");
+            open("/text-box");
             $("#userName").setValue("Alesha");
-            $("#userEmail").setValue("Popov");
+            $("#userEmail").setValue("Popov@gmail.com");
             $("#currentAddress").setValue("Yaroslavskiy 95");
             $("#permanentAddress").setValue("Yaroslavskiy 9000");
             $("#submit").click();
